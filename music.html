@@ -55,6 +55,7 @@ table, td {
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   border-collapse: collapse;
+  border-radius: 0 0 12px 12px;
   opacity: 0;
   color: rgba(255,255,255,1);
   font-family: helvetica, sans-serif;
@@ -69,10 +70,9 @@ td {
   text-align: justify;
 }
 
-
 .show-description p {
   height: 420px;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
 }
 
 .show-description table {
@@ -113,7 +113,7 @@ td {
     font-size: 20px;
     line-height: 24px;
   }
-  table {
+  table, td {
     font-size: 16px;
   }
 }
@@ -183,7 +183,7 @@ td {
         Your browser does not support the audio tag.
       </audio></td>
     </tr>
-    <tr>
+    <tr class="Tbot">
     <td>Knee 1</td>
     <td><audio controls>
         <source src="audio.mp3" type="audio/mpeg">
