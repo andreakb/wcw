@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 <style>
 	body {
   font-family: helvetica, sans-serif;
+  color: rgba(255,255,255,1);
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 800px;
   background: #232323;
 }
 	div {
@@ -24,13 +26,50 @@
 
 	img {
 		position: relative;
-		left: 160px;
+		left: 270px;
 		border: 2px #232322;
 		border-radius: 10px
 	}
+
+  p {
+    opacity: 0;
+    color: #aaaaaa;
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    width: 100%;
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+  } 
+
+  link {
+    color: #aaaaaa;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .show-description p {
+    opacity: 1;
+  }
+
 </style>
+</head>
 <body>
 	<h1> What Capitalism Was</h1>
-	<div><a href="http://imgur.com/MXC0COI"><img src="http://i.imgur.com/MXC0COI.jpg" title="Hosted by imgur.com" /></a>
+	<div><a href="music.html"><img src="http://i.imgur.com/MXC0COI.jpg"></a>
+
+  <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vel ligula mollis pretium. Nunc consequat finibus orci eu tempor. Fusce faucibus orci quis leo bibendum, eu auctor lorem rhoncus. Sed in posuere est. Etiam iaculis risus quis hendrerit molestie. Sed quis convallis ex. Pellentesque quis sapien est. Vestibulum a arcu nec metus volutpat venenatis. Phasellus euismod nulla ultrices, porttitor sapien et, ultrices libero. Integer dapibus enim erat, id vulputate dolor varius ut. Mauris placerat fringilla nisl id sollicitudin.</p></div>
+
+  
+
+<script>
+  $('body').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
 </body>
-</head>
